@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LiveStockRegistrationSuite" parallel="tests" thread-count="3">
+
+    <!-- Browser and application URL details -->
+    <parameter name="Browser" value="chrome" />
+    <parameter name="Browser" value="firefox" />
+    <parameter name="Browser" value="edge" />
+    <parameter name="url" value="https://livestocktmqa.dhanushinfotech.com" />
+    
+    <!-- User login credentials -->
+    <parameter name="UserId" value="harimvu@dhspltd.com" />
+    <parameter name="PasswordId" value="654321" />
+    
+    <!-- Hospital registration parameters -->
+    <parameter name="sleeptime" value="3000" />
+    <parameter name="HospitalName" value="RENO Hospital" />
+    <parameter name="Address" value="Almasguda" />
+    <parameter name="Pincode" value="500058" />
+    <parameter name="Email" value="renohospital@dipl.com" />
+    <parameter name="FirstName" value="Reno" />
+    <parameter name="LastName" value="R" />
+    <parameter name="PhoneNumber" value="9966331210" />
+    <parameter name="RegistrationNo" value="TS886Test87" />
+    
+    <!-- Doctor registration parameters -->
+    <parameter name="TypeOfDoctor" value="MVU Doctor" />
+    <parameter name="DoctorHospitalName" value="RENO Hospital" />
+    <parameter name="DoctorFirstName" value="RenuDesai" />
+    <parameter name="DoctorLastName" value="Konidela" />
+    <parameter name="DOB" value="25-05-1994" />
+    <parameter name="Gender" value="Male" />
+   <parameter name="MobileNumber" value="8886667770" />
+    <parameter name="DoctorEmail" value="renudesai@dhspltd.com" />
+    <parameter name="MCInumber" value="TS876545" />
+    <parameter name="LocationName" value="Urban" />
+    <parameter name="DistrictName" value="Ambala" />
+    <parameter name="DepartmentName" value="Cardiology" />
+    <parameter name="DoctorPincode" value="500058" />
+    <parameter name="Qualification" value="Bachelors in Veterinary Science and Animal Husbandry" />
+    <parameter name="YearofExperience" value="6" />
+    <parameter name="RegistrationExpiryDate" value="25-05-2032" />
+    <parameter name="Workshift" value="24/7 (11:15 - 23:59)" />
+    
+    <!-- HCW (Health Care Worker) registration parameters -->
+    <parameter name="AgentType" value="Cluster Coordinator" />
+    <parameter name="HCWFirstName" value="RenuDesai" />
+    <parameter name="HCWLastName" value="Konidela" />
+    <parameter name="HCWDOB" value="25-05-1994" />
+    <parameter name="HCWGender" value="Female" />
+    <parameter name="HCWMobileNumber" value="8886667770" />
+    <parameter name="HCWEmail" value="renudesaihcw@dhspltd.com" />
+    <parameter name="LocationType" value="Urban" />
+    <parameter name="HCWDistrictName" value="Ambala" />
+    <parameter name="HCWPincode" value="500058" />
+    <parameter name="HCWAddress" value="Ambala" />
+    <parameter name="HCWWorkShift" value="24/7 (11:15 - 23:59)" />
+    <parameter name="AadharUpload" value="C:\\Users\\Hariprasad R\\Downloads\\OIP (1).jpg" />
+    
+    <!-- VLDA (Veterinary Livestock Development Assistant) registration parameters -->
+    <parameter name="VLDAFirstName" value="RenuDesai" />
+    <parameter name="VLDALastName" value="Konidela" />
+    <parameter name="VLDAGender" value="Female" />
+    <parameter name="VLDADOB" value="25-05-1994" />
+    <parameter name="VLDAMobileNumber" value="6678788800" />
+    <parameter name="VLDAEmail" value="renudesaivlda@dhspltd.com" />
+    <parameter name="VLDAPincode" value="500058" />
+    <parameter name="VLDAAddress" value="Ambala" />
+    <parameter name="VLDAQualification" value="Diploma in Veterinary Science" />
+    <parameter name="VLDAYearofExperience" value="6" />
+    <parameter name="VLDARegistrationExpiryDate" value="05-05-2027" />
+    <parameter name="VLDAWorkshift" value="24/7 (11:15 - 23:59)" />
+    <parameter name="VLDAPhotoUpload" value="C:\\Users\\Hariprasad R\\Downloads\\OIP (1).jpg" />
+    <parameter name="VLDACertificateUpload" value="C:\\Users\\Hariprasad R\\Downloads\\OIP.jpg" />
+    <parameter name="VLDADigitalCertificate" value="C:\\Users\\Hariprasad R\\Downloads\\images.png" />
+    
+    <!-- Driver registration parameters -->
+    <parameter name="DriverFirstName" value="RenuDesai" />
+    <parameter name="DriverLastName" value="Konidela" />
+    <parameter name="EmployeeType" value="Permanent" />
+    <parameter name="DriverGender" value="Female" />
+    <parameter name="DriverLocationType" value="Rural" />
+    <parameter name="DriverDistrictName" value="Ambala" />
+    <parameter name="MandalName" value="Ambala Cantonment" />
+    <parameter name="VillageName" value="Barnala (Part)(48)" />
+    <parameter name="DriverPincode" value="500058" />
+    <parameter name="DriverMobileNumber" value="9786765566" />
+    <parameter name="DriverEmail" value="renudesaidriver@dhspltd.com" />
+    <parameter name="LicenceNumber" value="Ts876588TEST" />
+    <parameter name="HeavyVehicleLicense" value="TSH9988876544" />
+    <parameter name="DriverAddress" value="JAWAD" />
+    <parameter name="DriverWorkShift" value="24/7 (11:15 - 23:59)" />
+    <parameter name="PoliceVerification" value="C:\\Users\\Hariprasad R\\Downloads\\Blood sugar Test.pdf" />
+    
+    <!-- Demo camp creation parameters -->
+    <parameter name="CampName" value="Hari camp2" />
+    <parameter name="CampType" value="Health camps" />
+    <parameter name="DurationCampHours" value="05" />
+    <parameter name="DurationCampMinutes" value="30" />
+    <parameter name="CampDistrict" value="369" />
+    <parameter name="BaseLocation" value="52" />
+    <parameter name="CampAddress" value="Ambala" />
+    <parameter name="Latitude" value="17.45453" />
+    <parameter name="Longitude" value="78.54552" />
+    <parameter name="InchargeName" value="Hari" />
+    <parameter name="InchargeMobileNumber" value="9999097766" />
+
+    <!-- Test configurations -->
+    <test name="Hospital Registration" enabled="true">
+        <classes>
+            <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+                <methods>
+                    <include name="BrowserLaunch" />
+                    <include name="LaunchUrl" />
+                    <include name="LoginDetails" />
+                    <include name="HospitalRegistrationScreen" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Doctor Registration" enabled="true">
+        <classes>
+            <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+                <methods>
+                    <include name="BrowserLaunch" />
+                    <include name="LaunchUrl" />
+                    <include name="LoginDetails" />
+                    <include name="DoctorRegistration" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,103 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="LiveStockRegistrationSuite" parallel="tests" thread-count="3">
+
+    <!-- Global parameters -->
+  <!--  <parameter name="sleeptime" value="3000" />
+    <parameter name="HospitalName" value="RENO Hospital" />
+    <parameter name="Address" value="Almasguda" />
+    <parameter name="Pincode" value="500058" />
+    <parameter name="Email" value="renohospital@dipl.com" />
+    <parameter name="FirstName" value="Reno" />
+    <parameter name="LastName" value="R" />
+    <parameter name="PhoneNumber" value="9966331210" />
+    <parameter name="RegistrationNo" value="TS886Test87" />-->
+
+    <!-- Chrome Test for Hospital Registration -->
+    <test name="Hospital Registration - Chrome">
+        <parameter name="Browser" value="chrome" />
+        <parameter name="url" value="https://livestocktmqa.dhanushinfotech.com" />
+        <parameter name="UserId" value="harimvu@dhspltd.com" />
+        <parameter name="PasswordId" value="654321" />
+        <parameter name="sleeptime" value="3000" />
+    <parameter name="HospitalName" value="sunitha Hospital" />
+    <parameter name="Address" value="Almasguda" />
+    <parameter name="Pincode" value="500058" />
+    <parameter name="Email" value="sunitha132@dipl.com" />
+    <parameter name="FirstName" value="Reno" />
+    <parameter name="LastName" value="R" />
+    <parameter name="PhoneNumber" value="9966331211" />
+    <parameter name="RegistrationNo" value="TS886Test27" />
+        <classes>
+            <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+                <methods>
+                    <include name="BrowserLaunch" />
+                    <include name="LaunchUrl" />
+                    <include name="LoginDetails" />
+                    <include name="HospitalRegistrationScreen" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Firefox Test for Doctor Registration -->
+    <test name="Doctor Registration - Firefox">
+        <parameter name="Browser" value="firefox" />
+        <parameter name="url" value="https://livestocktmqa.dhanushinfotech.com" />
+        <parameter name="UserId" value="harimvu@dhspltd.com" />
+        <parameter name="PasswordId" value="654321" />
+    <parameter name="TypeOfDoctor" value="MVU Doctor" />
+    <parameter name="DoctorHospitalName" value="sunitha Hospital" />
+    <parameter name="DoctorFirstName" value="Sunitha" />
+    <parameter name="DoctorLastName" value="Konidela" />
+    <parameter name="DOB" value="25-05-1994" />
+    <parameter name="Gender" value="Male" />
+   <parameter name="MobileNumber" value="8886667771" />
+    <parameter name="DoctorEmail" value="sunithadoctor@dhspltd.com" />
+    <parameter name="MCInumber" value="TS876545" />
+    <parameter name="LocationName" value="Urban" />
+    <parameter name="DistrictName" value="Ambala" />
+    <parameter name="DepartmentName" value="Cardiology" />
+    <parameter name="DoctorPincode" value="500058" />
+    <parameter name="Qualification" value="Bachelors in Veterinary Science and Animal Husbandry" />
+    <parameter name="YearofExperience" value="6" />
+    <parameter name="RegistrationExpiryDate" value="25-05-2032" />
+    <parameter name="Workshift" value="24/7 (11:15 - 23:59)" />
+        <classes>
+            <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+                <methods>
+                    <include name="BrowserLaunch" />
+                    <include name="LaunchUrl" />
+                    <include name="LoginDetails" />
+                    <include name="DoctorRegistration" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Edge Test for Hospital Registration -->
+    <test name="Hospital Registration - Edge">
+        <parameter name="Browser" value="edge" />
+        <parameter name="url" value="https://livestocktmqa.dhanushinfotech.com" />
+        <parameter name="UserId" value="harimvu@dhspltd.com" />
+        <parameter name="PasswordId" value="654321" />
+    <parameter name="HospitalName" value="sangeetha Hospital" />
+    <parameter name="Address" value="Almasguda" />
+    <parameter name="Pincode" value="500058" />
+    <parameter name="Email" value="sangeetha132@dipl.com" />
+    <parameter name="FirstName" value="Reno" />
+    <parameter name="LastName" value="R" />
+    <parameter name="PhoneNumber" value="9866331212" />
+    <parameter name="RegistrationNo" value="TS8Test27" />  
+        <classes>
+            <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+                <methods>
+                    <include name="BrowserLaunch" />
+                    <include name="LaunchUrl" />
+                    <include name="LoginDetails" />
+                    <include name="HospitalRegistrationScreen" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

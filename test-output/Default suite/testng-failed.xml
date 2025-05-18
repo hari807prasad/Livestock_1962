@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Livestock_1962Application.Livestock_1962.Registration_Module">
+        <methods>
+          <include name="CampRegistration"/>
+          <include name="Teardown"/>
+          <include name="HCWRegistration"/>
+          <include name="LoginDetails"/>
+          <include name="DoctorRegistration"/>
+          <include name="BrowserLaunch"/>
+          <include name="DriverRegistration"/>
+          <include name="VLDAregistration"/>
+          <include name="HospitalRegistrationScreen"/>
+          <include name="LaunchUrl"/>
+        </methods>
+      </class> <!-- Livestock_1962Application.Livestock_1962.Registration_Module -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
